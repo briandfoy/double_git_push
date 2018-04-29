@@ -282,7 +282,7 @@ sub get_bitbucket_token ( $key = $ENV{BITBUCKET_API_KEY}, $secret = $ENV{BITBUCK
 sub bitbucket_ua () {
 	state $rc = require Mojo::UserAgent;
 	unless( $rc ) {
-		die "Install Mojolicious to use this program\n\t$ cpan Mojolicious\n";
+		die "Install Mojolicious to use this program\n\t\$ cpan Mojolicious\n";
 		}
 
 	state $ua = Mojo::UserAgent->new;
